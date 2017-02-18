@@ -42,7 +42,7 @@ Content-Type: text/html
 <title>Success</title>
 </head>
 <body>
-Boo!
+Certs renewed and send to proxy!
 </body>
 </html>
 """)
