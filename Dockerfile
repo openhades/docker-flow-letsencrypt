@@ -20,6 +20,9 @@ RUN PATH=$PATH:/root
 # Add supervisord.conf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf 
 
+# Add reqcert.py
+ADD reqcert.py /reqcert.py
+
 # Add certbot and make it executable
 ADD certbot.sh /root/certbot.sh
 RUN chmod u+x /root/certbot.sh
