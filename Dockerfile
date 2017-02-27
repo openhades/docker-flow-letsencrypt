@@ -17,6 +17,9 @@ RUN chmod a+x /root/certbot-auto
 RUN ./root/certbot-auto --version --non-interactive
 RUN PATH=$PATH:/root
 
+# create letsencrypt folder for letsencrypt files (accounts, keys, certificates)
+RUN mkdir /etc/letsencrypt
+
 # Add supervisord.conf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf 
 
